@@ -30,7 +30,7 @@ require_once('./DBfuncs.php');
 
 $dbh = ConnectDB();
 
-$list = FetchArray($dbh, 'movies');
+$list = FetchArray($dbh, 'movies_new');
 
 $index = 1;
 foreach ( $list as $movie ) {

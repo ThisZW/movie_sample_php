@@ -34,7 +34,7 @@ function FetchArray($dbh, $table)
         $data = $stmt->fetchAll(PDO::FETCH_OBJ);
         // release the statement
         $stmt = null;
-
+        
         return $data;
     }
     catch(PDOException $e)

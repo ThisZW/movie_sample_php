@@ -17,7 +17,7 @@ try {
     		 "	      roles.fname   as fake_first, " .
        "        roles.lname   as fake_last,   " .
        "        roles.movie_id as mid " .
-			 " FROM movies " .
+			 " FROM movies_new " .
 			 " JOIN roles USING (movie_id) " .
 			 " JOIN players USING (player_id) " .
 			 " WHERE players.player_id =:player_id" .

@@ -16,10 +16,10 @@ try {
     		 "	      roles.fname   as fake_first, " .
 			 "        roles.lname   as fake_last,  " .
 			 "        roles.role_id " . 
-			 " FROM movies " .
+			 " FROM movies_new " .
 			 " JOIN roles USING (movie_id) " .
 			 " JOIN players USING (player_id) " .
-			 " WHERE movies.movie_id=:movie_id " .
+			 " WHERE movies_new.movie_id=:movie_id " .
 			 " ORDER BY players.lname, players.fname ";
 			 
 	$stmt = $dbh->prepare($query);

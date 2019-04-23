@@ -21,8 +21,11 @@ function ConnectDB() {
     /*** mysql server info ***/
     $hostname = '127.0.0.1';
     $username = 'root';
-    $password = 'bendanzaijian1';
-    $dbname   = 'movies_new';
+    /*$password = 'bendanzaijian1';
+    $dbname   = 'movies_new';*/
+    //for server
+    $password = 'coldladder';
+    $dbname = 'weny8';
 
     try {
         $dbh = new PDO("mysql:host=$hostname;dbname=$dbname",
